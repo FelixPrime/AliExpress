@@ -10,8 +10,10 @@ class AliClient
     
     public function __construct()
     {
-        $apiAccessInfo = require_once 'ali_keys.php';
-        $this->appKey = $apiAccessInfo['appKey'];
+        require_once 'ali_keys.php';
+        
+        $this->appKey = APP_KEY;
+        $this->appSecret = APP_SECRET;
     }
     
     /**
