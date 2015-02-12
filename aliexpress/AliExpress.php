@@ -91,7 +91,7 @@ class AliExpress
         if (is_numeric($searchParam)) {
             $request->setCategoryId($searchParam);
         } else {
-            $request->setKeywords('shoes');
+            $request->setKeywords($searchParam);
         }
         foreach ($params as $key => $val) {
             $set = 'set'.ucfirst($key);
