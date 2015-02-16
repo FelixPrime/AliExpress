@@ -168,7 +168,7 @@ class AliExpress
      * </ol>
      * @return type
      */
-    public function getPropmotionLinks($trackingId, $urls, $fields = null)
+    public function getPromotionLinks($trackingId, $urls, $fields = null)
     {
         require_once 'request/PromotionLinksRequest.php';
         $request = new PromotionLinksRequest();
