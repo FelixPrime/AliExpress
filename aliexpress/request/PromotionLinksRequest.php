@@ -44,7 +44,7 @@ class PromotionLinksRequest extends Request
 
     public function getUrls()
     {
-        return $this->urls;
+        return explode(",", $this->urls);
     }
 
     public function setFields($fields)
@@ -59,6 +59,9 @@ class PromotionLinksRequest extends Request
 
     public function setUrls($urls)
     {
+        if (is_array($urls)) {
+            $urls = implode(",", $urls);
+        }
         $this->urls = $urls;
     }
     
