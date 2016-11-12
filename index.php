@@ -23,4 +23,4 @@ $productList = $ali->getListProduct(322, array('keywords'=>'man shoes', 'commiss
 $product = $ali->getProduct(32213749383);
 
 //get promotion link(s)
-$link = $ali->getPropmotionLinks('<your_tracking_ID>', "http://www.aliexpress.com/item//32213749383.html,http://www.aliexpress.com/item//1786034050.html");
+$link = $ali->getPromotionLinks('<your_tracking_ID>', "http://www.aliexpress.com/item//32213749383.html,http://www.aliexpress.com/item//1786034050.html");
